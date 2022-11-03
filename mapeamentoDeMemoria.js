@@ -2,8 +2,10 @@ var tamanho_memoria_principal = parseInt(prompt("Tamanho da memória Principal (
 var tamanho_memoria_cache = parseInt(prompt("Tamanho da memória Cache (Bytes):"));
 var tamanho_bloco = parseInt(prompt("Tamanho do Bloco (Bytes):"));
 
+var tamanho_linha = tamanho_memoria_cache / tamanho_bloco;
+
 var largura_bloco_linha = Math.log2(tamanho_memoria_cache);
-var qtd_linhas = 
+var qtd_linhas;
 
 var tamanho_enderenco = Math.log2(tamanho_memoria_principal * 8);
 
